@@ -4,7 +4,7 @@ import Header from "./Components/Layout/Header";
 import ProcessSection from "./Components/Sections/ProcessSection";
 import ProblemsSection from "./Components/Sections/ProblemsSection";
 import SurveyChartsSection from "./Components/Sections/SurveyChartsSection";
-import InterviewSection from "./omponents/Sections/InterviewSection";
+import InterviewSection from "./Components/Sections/InterviewSection";
 import SurveySection from "./Components/Sections/SurveySection";
 import NeedsSection from "./Components/Sections/NeedsSection";
 import RequirementsSection from "./Components/Sections/RequirementsSection";
