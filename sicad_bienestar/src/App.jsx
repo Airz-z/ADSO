@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Sidebar from "./components/Layout/Sidebar";
-import Header from "./components/Layout/Header";
-import ProcessSection from "./components/Sections/ProcessSection";
-import ProblemsSection from "./components/Sections/ProblemsSection";
-import SurveyChartsSection from "./components/Sections/SurveyChartsSection";
-import InterviewSection from "./components/Sections/InterviewSection";
-import SurveySection from "./components/Sections/SurveySection";
-import NeedsSection from "./components/Sections/NeedsSection";
-import RequirementsSection from "./components/Sections/RequirementsSection";
-import ConclusionsSection from "./components/Sections/ConclusionsSection";
+import Sidebar from "./Components/Layout/Sidebar";
+import Header from "./Components/Layout/Header";
+import ProcessSection from "./Components/Sections/ProcessSection";
+import ProblemsSection from "./Components/Sections/ProblemsSection";
+import SurveyChartsSection from "./Components/Sections/SurveyChartsSection";
+import InterviewSection from "./omponents/Sections/InterviewSection";
+import SurveySection from "./Components/Sections/SurveySection";
+import NeedsSection from "./Components/Sections/NeedsSection";
+import RequirementsSection from "./Components/Sections/RequirementsSection";
+import ConclusionsSection from "./Components/Sections/ConclusionsSection";
 
 import { staffMembers, getStaffById } from "./data/staff";
 import { processData } from "./data/processData";
@@ -17,7 +17,7 @@ import { surveyData } from "./data/surveyData";
 import { needsData } from "./data/needsData";
 import { requirementsData } from "./data/requirementsData";
 import { conclusionsData } from "./data/conclusionsData";
-import { SECTIONS, DEFAULT_SECTION_ID } from "./utils/constants";
+import { SECTIONS, DEFAULT_SECTION_ID } from "./Utils/constants";
 
 import "./App.css";
 
