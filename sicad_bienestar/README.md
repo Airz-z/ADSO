@@ -1,8 +1,7 @@
 # Taller 10 — Análisis de la información recolectada (Bienestar al Aprendiz, SENA)
 
 Front-end en React + Vite que organiza los resultados del formulario real
-aplicado al **personal de Bienestar al Aprendiz** (no instructores, no
-coordinación) sobre el Sistema de Seguimiento y Control de Asistencias,
+aplicado al **personal de Bienestar al Aprendiz**  sobre el Sistema de Seguimiento y Control de Asistencias,
 desde la óptica de alertas tempranas y prevención de deserción.
 
 ## Cómo ejecutarlo
