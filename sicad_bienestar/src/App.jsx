@@ -17,7 +17,7 @@ import { surveyData } from "./data/surveyData";
 import { needsData } from "./data/needsData";
 import { requirementsData } from "./data/requirementsData";
 import { conclusionsData } from "./data/conclusionsData";
-import { SECTIONS, DEFAULT_SECTION_ID } from "/Utils/constants";
+import { SECTIONS, DEFAULT_SECTION_ID } from "./Utils/constants.js/";
 
 import "./App.css";
 
