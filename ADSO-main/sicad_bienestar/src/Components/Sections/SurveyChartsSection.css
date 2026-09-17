@@ -1,0 +1,64 @@
+.charts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 780px;
+}
+
+.chart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.chart-caption {
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.chart-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line);
+}
+
+.chart-toggle-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+}
+
+.chart-toggle-btn + .chart-toggle-btn {
+  border-left: 1px solid var(--line);
+}
+
+.chart-toggle-btn.is-active {
+  background: var(--surface-raised);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.chart-frame {
+  border: 1px solid var(--line);
+  padding: 1rem 0.75rem 0.5rem;
+  background: var(--surface);
+}
+
+.chart-closed-question-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+}
+
+.chart-closed-options {
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}

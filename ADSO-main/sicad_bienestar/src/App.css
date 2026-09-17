@@ -1,0 +1,19 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2.5rem 3rem 5rem;
+  max-width: 980px;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    flex-direction: column;
+  }
+  .app-content {
+    padding: 2rem 1.5rem 4rem;
+  }
+}

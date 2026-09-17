@@ -1,0 +1,119 @@
+.sidebar {
+  width: 264px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--line);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar-brand-kicker {
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
+}
+
+.sidebar-brand-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0.3rem;
+  color: var(--ink);
+}
+
+.sidebar-group-title {
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sidebar-staff {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  text-align: left;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.sidebar-staff-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--staff-color, var(--line));
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+}
+
+.sidebar-staff-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.sidebar-staff-role {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  margin-top: 0.1rem;
+}
+
+.sidebar-staff.is-active {
+  border-left-color: var(--staff-color, var(--primary));
+  background: var(--surface-raised);
+}
+
+.sidebar-section {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  padding: 0.45rem 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.sidebar-section.is-active {
+  border-left-color: var(--primary);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+}

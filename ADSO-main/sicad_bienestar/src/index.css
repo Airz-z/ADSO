@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  /* Color: paleta institucional (verde SENA) llevada a un informe de
+     análisis, no a un panel tipo SaaS. */
+  --bg: #F7F8F5;
+  --surface: #FFFFFF;
+  --surface-raised: #EFF2EC;
+  --line: #DDE3DA;
+  --ink: #16241C;
+  --ink-soft: #5B6B60;
+  --primary: #39A900;
+  --primary-deep: #275C1F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

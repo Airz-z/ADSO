@@ -1,0 +1,5 @@
+.card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 1.25rem 1.4rem;
+}

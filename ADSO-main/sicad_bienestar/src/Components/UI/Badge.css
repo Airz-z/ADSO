@@ -1,0 +1,12 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--badge-color, var(--line));
+  line-height: 1.3;
+}

@@ -1,0 +1,122 @@
+.process-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  max-width: 720px;
+}
+
+.process-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.process-summary-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.process-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 0.9rem;
+}
+
+.process-actors-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.process-actor {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.process-actor-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+  min-width: 190px;
+}
+
+.process-actor-role {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.process-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--line);
+}
+
+.process-step {
+  display: flex;
+  gap: 1rem;
+  padding: 0 0 1.4rem 1.25rem;
+  margin-left: -1px;
+  border-left: 1px solid var(--line);
+  position: relative;
+}
+
+.process-step:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.process-step-index {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  color: var(--primary);
+  background: var(--surface);
+  position: relative;
+  left: -1.62rem;
+  width: 1.3rem;
+}
+
+.process-step-body {
+  margin-left: -1.3rem;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.process-step-description {
+  font-family: "Inter", sans-serif;
+  font-size: 0.92rem;
+  color: var(--ink);
+  max-width: 480px;
+}
+
+.process-step-time {
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .process-actor {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .process-actor-name {
+    min-width: 0;
+  }
+}

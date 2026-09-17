@@ -1,0 +1,46 @@
+.survey-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 620px;
+}
+
+.survey-question {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.94rem;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.survey-answer {
+  font-family: "Inter", sans-serif;
+  font-size: 0.94rem;
+  color: var(--primary-deep);
+}
+
+.survey-metrics {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-metric-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+
+.survey-metric-label {
+  color: var(--ink-soft);
+}
+
+.survey-metric-value {
+  color: var(--ink);
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+}

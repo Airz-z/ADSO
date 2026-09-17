@@ -1,0 +1,26 @@
+.conclusions-section {
+  max-width: 700px;
+}
+
+.conclusions-note {
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.conclusions-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.conclusion-item {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink);
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary);
+}

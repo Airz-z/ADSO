@@ -1,0 +1,26 @@
+.problems-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 720px;
+}
+
+.problem-item {
+  border-left: 2px solid #B3261E;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.problem-context {
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.25rem;
+}
+
+.problem-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.96rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
