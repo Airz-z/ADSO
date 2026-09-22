@@ -1,5 +1,4 @@
-// Constantes compartidas por varios componentes. Centralizarlas aquí evita
-// "magic strings" repetidos y facilita mantener la app escalable.
+// src/utils/constants.js
 
 export const PRIORITY_STYLES = {
   Alta: { color: "#B3261E", label: "Prioridad alta" },
@@ -7,17 +6,18 @@ export const PRIORITY_STYLES = {
   Baja: { color: "#5B6B60", label: "Prioridad baja" },
 };
 
-// Cada sección define: identificador de ruta interna, título visible en el
-// menú y título largo que aparece como encabezado de la sección.
 export const SECTIONS = [
-  { id: "proceso", navLabel: "Proceso actual", heading: "Proceso actual" },
-  { id: "problemas", navLabel: "Problemas", heading: "Problemas identificados" },
-  { id: "graficas", navLabel: "Gráfica dinámica", heading: "Gráfica dinámica de indicadores" },
-  { id: "entrevista", navLabel: "Respuestas abiertas", heading: "Respuestas abiertas de la encuesta" },
-  { id: "encuesta", navLabel: "Indicadores", heading: "Indicadores cerrados de la encuesta" },
-  { id: "necesidades", navLabel: "Necesidades", heading: "Necesidades identificadas" },
-  { id: "requisitos", navLabel: "Requisitos", heading: "Requisitos funcionales" },
-  { id: "conclusiones", navLabel: "Conclusiones", heading: "Conclusiones" },
+  { id: "introduccion", heading: "Introducción e Integrantes", navLabel: "Introducción" },
+  { id: "diagrama", heading: "Diagrama de Flujo del Proceso", navLabel: "Diagrama de Flujo" },
+  { id: "graficas-torta", heading: "Gráficas de Torta Interactivas", navLabel: "Gráficas Dinámicas" },
+  { id: "proceso", heading: "Proceso Actual", navLabel: "Proceso actual" },
+  { id: "problemas", heading: "Problemas Identificados", navLabel: "Problemas" },
+  { id: "graficas", heading: "Gráficas Generales", navLabel: "Gráfica dinámica" },
+  { id: "entrevista", heading: "Respuestas Entrevista", navLabel: "Respuestas abiertas" },
+  { id: "encuesta", heading: "Resultados Encuesta", navLabel: "Indicadores" },
+  { id: "necesidades", heading: "Necesidades Identificadas", navLabel: "Necesidades" },
+  { id: "requisitos", heading: "Requisitos Funcionales", navLabel: "Requisitos" },
+  { id: "conclusiones", heading: "Conclusiones del Proyecto", navLabel: "Conclusiones" }
 ];
 
 export const DEFAULT_SECTION_ID = SECTIONS[0].id;

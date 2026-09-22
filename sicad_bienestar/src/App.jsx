@@ -10,6 +10,11 @@ import NeedsSection from "./Components/Sections/NeedsSection";
 import RequirementsSection from "./Components/Sections/RequirementsSection";
 import ConclusionsSection from "./Components/Sections/ConclusionsSection";
 
+// Nuevos componentes importados
+import { IntroduccionIntegrantes } from "./Components/Sections/Introduction";
+import { GraficasTorta } from "./Components/Sections/DonutCharts";
+import { DiagramaFlujo } from "./Components/Sections/Diagram";
+
 import { staffMembers, getStaffById } from "./data/staff";
 import { processData } from "./data/processData";
 import { openAnswersData } from "./data/openAnswersData";
@@ -24,21 +29,31 @@ import "./App.css";
 /**
  * Punto de ensamblaje: mantiene en estado la persona de Bienestar activa y
  * la sección activa, y le pasa a cada sección únicamente el recorte de
- * datos que le corresponde. Agregar una persona nueva solo requiere
- * añadir una entrada en cada archivo de /data — no hay que tocar este
- * archivo ni los componentes.
+ * datos que le corresponde.
  */
 function App() {
   const [activeStaffId, setActiveStaffId] = useState(staffMembers[0].id);
   const [activeSectionId, setActiveSectionId] = useState(DEFAULT_SECTION_ID);
 
   const activeStaff = getStaffById(activeStaffId);
-  const activeSection = SECTIONS.find((section) => section.id === activeSectionId);
+  // Prevenimos error si no encuentra la sección asignando un título por defecto
+  const activeSection = SECTIONS.find((section) => section.id === activeSectionId) || {
+    heading: "Sección",
+  };
 
   const process = processData[activeStaffId];
 
   const renderSection = () => {
     switch (activeSectionId) {
+      // Nuevas secciones integradas
+      case "introduccion":
+        return <IntroduccionIntegrantes />;
+      case "diagrama":
+        return <DiagramaFlujo />;
+      case "graficas-torta":
+        return <GraficasTorta />;
+
+      // Secciones preexistentes
       case "proceso":
         return <ProcessSection process={process} />;
       case "problemas":
@@ -61,7 +76,7 @@ function App() {
       case "conclusiones":
         return <ConclusionsSection conclusions={conclusionsData} />;
       default:
-        return null;
+        return <IntroduccionIntegrantes />;
     }
   };
 

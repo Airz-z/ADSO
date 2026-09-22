@@ -10,6 +10,7 @@ Requisitos: tener [Node.js](https://nodejs.org/) instalado (incluye `npm`).
 
 ```bash
 npm install
+npm run build
 npm run dev
 ```
 
